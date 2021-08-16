@@ -1,18 +1,11 @@
 import React, {Component} from 'react';
+import Page4 from "./page4";
 
 class Page3 extends Component {
-    constructor({match}) {
-        super();
-
-        this.state = {
-
-            myName: match.params.username
-        }
-    }
     render() {
         return (
             <div>
-                <h1>{this.state.myName}</h1>
+                <Page4 name={this.props.name}/>
             </div>
         );
     }

@@ -1,12 +1,11 @@
 import React, {Component} from 'react';
-import {Link} from "react-router-dom";
+import Page3 from "./page3";
 
 class Page2 extends Component {
     render() {
         return (
             <div>
-               <h1>page 2</h1>
-                <button><Link to="/page3/KhairulIslam">Pass my name</Link></button>
+                <Page3 name={this.props.name}/>
             </div>
         );
     }
